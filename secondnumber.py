@@ -13,4 +13,5 @@ class Number2(State):
         self.calculator.enteroperation(operation)
     def entereq(self):
         self.calculator.setstate(self.calculator.resultstate)
-        self.calculator.entereq()
+        self.calculator.count()
+        print(self.calculator.result)

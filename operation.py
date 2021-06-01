@@ -12,4 +12,6 @@ class Operation(State):
     def entereq(self):
         self.calculator.n2 = ''
         self.calculator.setstate(self.calculator.resultstate)
-        self.calculator.entereq()
+        self.calculator.n2 = self.calculator.n1
+        self.calculator.count()
+        print(self.calculator.result)
